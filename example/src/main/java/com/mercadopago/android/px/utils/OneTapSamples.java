@@ -456,6 +456,7 @@ public final class OneTapSamples {
         final SplitPaymentProcessor samplePaymentProcessor = new SamplePaymentProcessor(payment);
         final Collection<String> excludedPaymentTypes = new ArrayList<>();
         excludedPaymentTypes.add("account_money");
+        excludedPaymentTypes.add("credit_card");
         final CheckoutPreference checkoutPreferenceWithPayerEmail =
             getCheckoutPreferenceWithPayerEmail(excludedPaymentTypes, 120, 1);
         return new MercadoPagoCheckout.Builder(SAVED_CARD_MERCHANT_PUBLIC_KEY_1, checkoutPreferenceWithPayerEmail,

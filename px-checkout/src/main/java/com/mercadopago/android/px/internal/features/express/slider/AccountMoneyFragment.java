@@ -32,7 +32,7 @@ public class AccountMoneyFragment extends PaymentMethodFragment<AccountMoneyDraw
     @Override
     public void disable() {
         super.disable();
-        final View view = getView();
+        /*final View view = getView();
         final DisableConfiguration disableConfiguration = new DisableConfiguration(getContext());
         if (view != null) {
             final ViewGroup card = view.findViewById(R.id.payment_method);
@@ -42,7 +42,7 @@ public class AccountMoneyFragment extends PaymentMethodFragment<AccountMoneyDraw
             background.clearColorFilter();
             background.setImageResource(0);
             background.setBackgroundColor(disableConfiguration.getBackgroundColor());
-        }
+        }*/
     }
 
     @Override
